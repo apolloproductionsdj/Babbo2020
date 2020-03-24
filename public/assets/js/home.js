@@ -8,6 +8,14 @@ const $message = $('#message');
 
 let authSetting = ('login');
 
+sendUserToMenus();
+
+function sendUserToMenus() {
+  if (localStorage.getItem('user')) {
+    location.replace('/menus');
+  }
+}
+
 function setAuth(setting) {
   authSetting = setting;
 
@@ -62,6 +70,7 @@ function handleLoginResponse(data, status, jqXHR) {
 
     localStorage.setItem('authorization', jwt);
     localStorage.setItem('user', user);
+    sendUserToMenus();
   } else {
     displayMessage('Invalid email or password', 'danger');
   }
