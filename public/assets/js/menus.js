@@ -13,7 +13,7 @@ function init() {
     return;
   }
 
-  $('.welcome h1').text('Welcome ' + user.email + '!');
+  $('.welcome h3').text('Welcome ' + user.email + '!');
 }
 
 function handleLogout() {
