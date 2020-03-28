@@ -1,4 +1,5 @@
 const $logoutButton = $('#logout');
+const $appButton = $('.app-button');
 
 let user;
 
@@ -26,4 +27,14 @@ function handleLogout() {
   });
 }
 
+function menuAppetizersButton() {
+  $.ajax({
+    url: '/appetizers',
+    method: 'GET'
+  }).then(function() {
+    location.replace('/appetizers');
+  });
+}
+
 $logoutButton.on('click', handleLogout);
+$appButton.on('click', menuAppetizersButton);
