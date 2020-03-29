@@ -1,5 +1,6 @@
 const $logoutButton = $('#logout');
 const $appButton = $('.app-button');
+const $pastaButton = $('.pasta-button');
 
 let user;
 
@@ -36,5 +37,15 @@ function menuAppetizersButton() {
   });
 }
 
+function menuPastasButton() {
+  $.ajax({
+    url: '/pastas',
+    method: 'GET'
+  }).then(function() {
+    location.replace('/pastas');
+  });
+}
+
 $logoutButton.on('click', handleLogout);
 $appButton.on('click', menuAppetizersButton);
+$pastaButton.on('click', menuPastasButton);
