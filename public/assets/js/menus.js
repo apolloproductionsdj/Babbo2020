@@ -1,6 +1,16 @@
 const $logoutButton = $('#logout');
 const $appButton = $('.app-button');
 const $pastaButton = $('.pasta-button');
+const $saladsButton = $('.salads-button');
+const $sandwichesButton = $('.sandwiches-button');
+const $calzonesButton = $('.calzones-button');
+const $proBowlsButton = $('.pro-bowls-button');
+const $chalkEntreeButton = $('.chalk-entrees-button');
+const $kidsMenuButton = $('.kids-menu-button');
+const $dessertsButton = $('.desserts-button');
+const $pizzaButton = $('.pizza-button');
+const $italianSodasButton = $('.italian-sodas');
+
 
 let user;
 
@@ -33,7 +43,7 @@ function menuAppetizersButton() {
     url: '/appetizers',
     method: 'GET'
   }).then(function() {
-    location.replace('/appetizers');
+    location.assign('/appetizers');
   });
 }
 
@@ -42,10 +52,100 @@ function menuPastasButton() {
     url: '/pastas',
     method: 'GET'
   }).then(function() {
-    location.replace('/pastas');
+    location.assign('/pastas');
+  });
+}
+
+function menuSaladsButton() {
+  $.ajax({
+    url: '/salads',
+    method: 'GET'
+  }).then(function() {
+    location.assign('/salads')
+  });
+}
+
+function menuSandwichesButton() {
+  $.ajax({
+    url: ('/sandwiches'),
+    method: 'GET'
+  }).then(function() {
+    location.assign('/sandwiches');
+  });
+}
+
+function menuCalzonesButton() {
+  $.ajax({
+    url: ('/calzones'),
+    method: 'GET'
+  }).then(function() {
+    location.assign('/calzones');
+  });
+}
+
+function menuProBowlsButton() {
+  $.ajax({
+    url: ('/protein'),
+    method: 'GET'
+  }).then(function() {
+    location.assign('/protein');
+  });
+}
+
+function menuChalkEntreesButton() {
+  $.ajax({
+    url: ('/chalkboard'),
+    method: 'GET'
+  }).then(function() {
+    location.assign('/chalkboard');
+  });
+}
+
+function menuKidsMenuButton() {
+  $.ajax({
+    url: '/kids',
+    method: 'GET' 
+  }).then(function() {
+    location.assign('/kids');
+  });
+}
+
+function menuDessetsButton() {
+  $.ajax({
+    url: '/desserts',
+    mehtod: 'GET'
+  }).then(function() {
+    location.assign('/desserts');
+  });
+}
+
+function menuPizzaButton() {
+  $.ajax({
+    url: ('/pizzas'),
+    method: 'GET'
+  }).then(function(){
+    location.assign('/pizzas');
+  });
+}
+
+function menuItalianSodasButton() {
+  $.ajax({
+    url: ('/italian_sodas'),
+    method: 'GET'
+  }).then(function() {
+    location.assign('/italian_sodas');
   });
 }
 
 $logoutButton.on('click', handleLogout);
 $appButton.on('click', menuAppetizersButton);
 $pastaButton.on('click', menuPastasButton);
+$saladsButton.on('click', menuSaladsButton);
+$sandwichesButton.on('click', menuSandwichesButton);
+$calzonesButton.on('click', menuCalzonesButton);
+$proBowlsButton.on('click', menuProBowlsButton);
+$chalkEntreeButton.on('click', menuChalkEntreesButton);
+$kidsMenuButton.on('click', menuKidsMenuButton);
+$dessertsButton.on('click', menuDessetsButton);
+$pizzaButton.on('click', menuPizzaButton);
+$italianSodasButton.on('click', menuItalianSodasButton);
