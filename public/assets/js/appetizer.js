@@ -1,4 +1,3 @@
-document.getElementById('button').addEventListener('click', 
-  function() {
-  document.querySelector('.bg-modal').style.display = 'flex';
-});
+const $newBoardButton = $('#new-board');
+
+$newBoardButton.on('click', MicroModal.show.bind(null, 'create-board'))

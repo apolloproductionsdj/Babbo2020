@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/modal.css" />
   <link rel="stylesheet" type="text/css" href="/assets/css/pastas.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,11 +19,12 @@
     
 
       <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
         <!-- <div class="col-12 col-sm-6"> -->
         <h3><b>New</b> Zoodles Arrabbiata</h3>
         <p class="price">$10.95</p>
-          <a href="#" id="button" class="button">More info...</a>
+        <br />
+        <br />
+        <a href="#" class="button" id="button">More Info...</a>
       </div>
 
        <div class="booyah-box col-10 offset-1">
@@ -289,11 +291,29 @@
       <hr />
       <p class="menu_boiler">"*WARNING: Consuming raw or undercooked meat, eggs or seafood can increase your risk of food borne illness."</p>
     </section>
-
-    <!-- MODAL POPUP ----->
-    
-
-    <!-- END MODAL ----->
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div class="close">+</div>
+      <img class="center" src="zoodles-arrabbiata.jpg" png="">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8">
+                Zucchini Noodles, Spicy Marinara, Pomodoro Tomato, Anchovy Paste, Onion, Fresh Basil.
+              </div>
+              <div class="col-sm-4">
+                $10.95
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+<script src="/assets/js/pastas.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="/assets/js/ajax-setup.js"></script>
+ <!-- <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script> -->
+ 
     
   </body>
 </html>

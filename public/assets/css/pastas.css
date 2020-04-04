@@ -267,6 +267,7 @@ a.app-link:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .modal-content {
@@ -276,6 +277,7 @@ a.app-link:active {
   border-radius: 4px;
   text-align: center;
   padding: 20px;
+  
 }
 
 .center {
