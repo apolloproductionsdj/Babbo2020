@@ -274,4 +274,20 @@ a.app-link:active {
   height: 300px;
   background-color: white;
   border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+}
+
+.center {
+  width: 150px;
+  height: auto;
+}
+
+.description {
+  text-align: left;
+}
+
+.modal-body {
+  display: flex;
+  text-align: left;
 }

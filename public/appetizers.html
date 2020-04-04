@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400, 700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/assets/css/appetizers.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   <title>Appetizers</title>
 </head>
 <body>
@@ -22,7 +24,7 @@
         <h3>Pesto Cheese Crostini</h3>
         <p class="price">$7.95</p>
         <p class="descritpion">Toasted Italian Bread, Garlic, Mozzarella, Romano Cheese, Side of Bruschetta Tomatores.</p>
-        <button class="modal-button" id="show-modal">Learn More</button>
+          <a href="#" data-toggle="modal" data-target="#mymodal">Learn More</a>
       </div>
 
        <div class="booyah-box col-10 offset-1">
@@ -96,15 +98,54 @@
 
 <div class="bg-modal">
   <div class="modal-content">
-    <img src="zoodles-arrabbiata (1).jpg" png="">
+    <div class="close">+</div>
+    <img class="center" src="zoodles-arrabbiata.jpg" png="">
+      <form action="">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="E-Mail">
+        <a href="" class="button">Submit</a>
+      </form>
   </div>
 </div>
 
 
+
+
+<!-- <div class="modal" id="mymodal">
+      <div class="modal-dialog">
+          <img class="center" src="zoodles-arrabbiata.jpg" png="">
+            <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8">
+                Zucchini Noodles, Spicy Marinara, Pomodoro Tomato, Anchovy Paste, Onion, Fresh Basil.
+              </div>
+              <div class="col-sm-4">
+                $10.95
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   -->
+
+    <!-- <div class="container">
+         <div class="row">
+             <div class="col-xs-8">  
+                <p>Zucchini Noodles, Spicy Marinara, Pomodoro Tomato, Anchovy Paste, Onion, Fresh Basil.</p>
+             </div>
+             <br />
+             <div class="col-xs-4">
+                <p>$10.95</p>
+             </div>
+
+          </div>
+      </div> -->
+
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script src="/assets/js/ajax-setup.js"></script>
+ <script src="/assets/js/appetizer.js"></script>
  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
- 
 
 </body>
 </html>
