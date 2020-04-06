@@ -6,7 +6,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/modal.css" />
+<!--   <link rel="stylesheet" href="/assets/css/modal.css" /> -->
   <link rel="stylesheet" type="text/css" href="/assets/css/pastas.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -16,18 +16,17 @@
  <section class="appetizers">
       <h1 align="center">Pastas</h1>
       
-        <button type="button" onclick="history.back();" value="Back">Back</button>
+        <button type="button" class="button" onclick="history.back();" value="Back">Back</button>
     
 
 
 
       <div class="booyah-box col-10 offset-1">
-        <!-- <div class="col-12 col-sm-6"> -->
         <h3><b>New</b> Zoodles Arrabbiata</h3>
         <p class="price">$10.95</p>
         <br />
         <br />
-        <a href="#" class="button" id="button">More Info...</a>
+        <button type="button" class="button" id="button">More Info...</button>
       </div>
 
        <div class="booyah-box col-10 offset-1">
@@ -35,7 +34,7 @@
         <p class="price">$10.95</p>
         <br />
         <br />
-        <a href="#" class="button" id="button-francaise">More Info...</a>
+        <button class="button" id="button-francaise">More Info...</button>
       </div>
 
 
@@ -43,15 +42,15 @@
         <h3><b>New</b> Super Food</h3>
         <p class="price">$10.95</p>
         <p class="descritpion"> Pesto, Tuscan Kale, Spinach, Green Onions, Red Chili and Garlic in a White Wine Sauce. Served on Fettuccine.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
+        <button class="button" id="button-super">More Info...</button>
       </div>
 
       <div class="booyah-box col-10 offset-1">
-        <h3><b>New</b> What The Kale?</h3>
+        <h3><b>New</b> What The Kale?!</h3>
         <p class="price">$11.95</p>
         <p class="descritpion">Artichoke, Garlic, Kale and Roma Tomatoes served in a creamy Three Cheese Sauce. Served on Penne..</p>
         <p class="upgrade">TRY IT WITH CRISPY CHICKEN $3.95</p>
-        <button class="modal-button" id="show-modal">See Details</button>
+        <button class="button" id="button-kale">More Info...</button>
       </div>
 
       <div class="booyah-box col-10 offset-1">
@@ -293,6 +292,9 @@
       <p class="menu_boiler">"*WARNING: Consuming raw or undercooked meat, eggs or seafood can increase your risk of food borne illness."</p>
     </section>
 
+
+
+
     <div class="bg-modal">
       <div class="modal-content">
         <div class="close">+</div>
@@ -310,25 +312,94 @@
           </div>
         </div>
       </div>
-    </div>  
-    <div class="bg-modal-francaise">
+    </div> 
+    
+ <div class="bg-modal-francaise">
       <div class="modal-content">
-        <div class="close">+</div>
-      <img class="center" src="pasta-francaise.jpg" png="">
+        <div class="close-fran">
+          +
+        </div>
+        <div id="nav" class="nav">
+          <img class="center" id="start" src="pasta-francaise.jpg" png="">
+        </div>
         <div class="modal-body">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-8">
+              <div class="col-xs-8">
                 Caramelized Onions, Sun Dried Tomatoes, Toasted Pine Nuts and Parmesan in a Garlic Butter Wine Sauce. Served on Fettuccine with a slice of Toasted Ciabatta.
               </div>
-              <div class="col-sm-4">
+              <div class="col-xs-4">
                 $10.95
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>      
+    </div>   
+
+    <div class="bg-modal-super-food-pasta">
+      <div class="modal-content">
+        <div class="close-super">+</div>
+      <img class="center" src="super-food-pasta.jpg" png="">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-8">
+                Zucchini Noodles, Spicy Marinara, Pomodoro Tomato, Anchovy Paste, Onion, Fresh Basil.
+              </div>
+              <div class="col-xs-4">
+                $10.95
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+
+     <div class="bg-modal-kale">
+       <div class="modal-content">
+         <div class="close-kale">+</div>
+           <img class="center" src="what-the-kale.jpg" png="">
+           <div class="modal-body">
+             <div class="container-fluid">
+               <div class="row">
+                 <div class="col-xs-8">
+                   Artichoke, Garlic, Kale and Roma Tomatoes served in a creamy Three Cheese Sauce. Served on Penne.
+                 </div>
+                 <div class="col-xs-4">
+                   $10.95
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div> 
+       </div>
+  <!--     <div class="bg-modal-super-food-pasta">
+        <div class="modal-content">
+          <div class="close">+</div>
+            <img class="center" src="super-food-pasta.jpg" png="">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-8">
+                  Zucchini Noodles, Spicy Marinara, Pomodoro Tomato, Anchovy Paste, Onion, Fresh Basil.
+                </div>
+                <div class="row">
+                  <div class="col-xs-4">
+                    $10.95
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+ 
+
+
+
 <script src="/assets/js/pastas.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script src="/assets/js/ajax-setup.js"></script>

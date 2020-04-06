@@ -1,4 +1,4 @@
-button {
+/*button {
   display: inline;
   border: none;
   padding: 0;
@@ -8,7 +8,9 @@ button {
   line-height: inherit;
   -webkit-appearance: none;
   background-color: inherit;
-}
+}*/
+
+
 
 h4 {
   color: white;
@@ -281,6 +283,30 @@ a.app-link:active {
   display: none;
 }
 
+.bg-modal-super-food-pasta {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.bg-modal-kale {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
 .modal-content {
   width: 500px;
   height: 300px;
@@ -305,4 +331,46 @@ a.app-link:active {
   -webkit-box-flex: 1;
   flex: 1 1 auto;
   padding: 1rem;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg); 
+  cursor: pointer;
+}
+
+.close-fran {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg); 
+  cursor: pointer;
+}
+
+.close-super {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg); 
+  cursor: pointer;
+}
+
+.close-kale {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg); 
+  cursor: pointer;
+}
+
+.button {
+  background: #7f0000;
+  color: #fff;
+ 
 }
