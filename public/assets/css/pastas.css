@@ -333,15 +333,6 @@ a.app-link:active {
   padding: 1rem;
 }
 
-.close {
-  position: absolute;
-  top: 0;
-  right: 14px;
-  font-size: 42px;
-  transform: rotate(45deg); 
-  cursor: pointer;
-}
-
 .close-fran {
   position: absolute;
   top: 0;
@@ -373,4 +364,13 @@ a.app-link:active {
   background: #7f0000;
   color: #fff;
  
+}
+
+.close-zoo {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg); 
+  cursor: pointer;
 }
