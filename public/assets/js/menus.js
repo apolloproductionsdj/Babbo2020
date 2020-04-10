@@ -1,5 +1,6 @@
 const $logoutButton = $('#logout');
 const $appButton = $('.app-button');
+const $modalTest = $('.modal-test');
 const $pastaButton = $('.pasta-button');
 const $saladsButton = $('.salads-button');
 const $sandwichesButton = $('.sandwiches-button');
@@ -137,6 +138,15 @@ function menuItalianSodasButton() {
   });
 }
 
+function menuModalTest() {
+  $.ajax({
+    url: ('/appetizers2'),
+    method: 'GET'
+  }).then(function() {
+    location.assign('/appetizers2');
+  });
+}
+
 $logoutButton.on('click', handleLogout);
 $appButton.on('click', menuAppetizersButton);
 $pastaButton.on('click', menuPastasButton);
@@ -149,3 +159,4 @@ $kidsMenuButton.on('click', menuKidsMenuButton);
 $dessertsButton.on('click', menuDessetsButton);
 $pizzaButton.on('click', menuPizzaButton);
 $italianSodasButton.on('click', menuItalianSodasButton);
+$modalTest.on('click', menuModalTest);

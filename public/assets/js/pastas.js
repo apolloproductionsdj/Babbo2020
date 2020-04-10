@@ -37,3 +37,7 @@ document.querySelector('.close-kale').addEventListener('click',
   function() {
     document.querySelector('.bg-modal-kale').style.display = 'none';
   });
+
+
+
+      
