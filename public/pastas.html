@@ -8,359 +8,309 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 <!--   <link rel="stylesheet" href="/assets/css/modal.css" />
  -->  
- <link rel="stylesheet" type="text/css" href="/assets/css/pastas.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/pastas.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-
   <title></title>
-
 </head>
 <body>
- <section class="appetizers">
-      <h1 align="center">Pastas</h1>
-      
-        <button type="button" class="button" onclick="history.back();" value="Back">Back</button>
-    
-
-
-
-      <div class="booyah-box col-10 offset-1">
-        <h3><b>New</b> Zoodles Arrabbiata</h3>
-        <p class="price">$10.95</p>
-        <br />
-        <br />
-        <button class="button" data-toggle="modal" data-target="#myModal" id="button">More Info...</button>
-      </div>
-
-     
-       
-       <div class="booyah-box col-10 offset-1">
-        <h3><b>New</b> Pasta Francaise</h3>
-        <p class="price">$10.95</p>
-        <br />
-        <br />
-        <button class="button" id="button-francaise" data-toggle="modal" data-target="#myModal1">More Info...</button>
-      </div>
-
-
-      <div class="booyah-box col-10 offset-1">
-        <h3><b>New</b> Super Food</h3>
-        <p class="price">$10.95</p>
-        <br />
-        <br />
-        <button class="button" id="button-super">More Info...</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <h3><b>New</b> What The Kale?!</h3>
-        <p class="price">$11.95</p>
-        <br />
-        <br />
-        <button class="button" id="button-kale">More Info...</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Pomodoro Pasta</h3>
-        <p class="price">$10.95</p>
-        <p class="descritpion">Chopped Pomodoro Tomatoes, Green Onions, Capers, lightly tossed in Extra Virgin Olive Oil and Garlic. Served on Linguine and topped with Shaved Parmesan.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Alfredo Supremo</h3>
-        <p class="price">$12.50</p>
-        <p class="descritpion">White Wine, Garlic, Cream, and Parmesan Cheese. Served on Linguine.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-        
-       <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Pasta Primavera</h3>
-        <p class="price">$12.50</p>
-        <p class="descritpion">Mixed Peppers, Broccoli, Zucchini, Mushrooms, Diced and Sun Dried Tomatoes in a White Wine Garlic Butter Sauce. Served on Linguine.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-      
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Creamy Mushroom And Asparagus</h3>
-        <p class="price">$12.50</p>
-        <p class="descritpion">Creamy Garlic Sauce, Sun Dried Tomatoes, Mushrooms, Asparagus. Served on Penne.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Pasta Rustico</h3>
-        <p class="price">$12.50</p>
-        <p class="descritpion">Baby Spinach, Ricotta, Garlic, Fresh Marinara and topped with Mozzarella. Served on Penne.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-       <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Pasta Valducci</h3>
-        <p class="price">$12.50</p>
-        <p class="descritpion">Artichokes, Kalamata Olives, Sun Dried Tomatoes, and Garlic, in a Pink Sauce. Served on Penne.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-        <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Babbo's Bowl O' Bolognese</h3>
-        <p class="price">$14.50</p>
-        <p class="descritpion">Marinara Sauce, Ground Beef, Thyme, Bay Leaves, Garlic and Romano Cheese. Served on Spaghettini.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-        <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>PASTA PUGLIA (PRONOUNCED POOLIA)</h3>
-        <p class="price">$13.95</p>
-        <p class="descritpion">Fresh Tomato Brodo, Fresh Mozzarella, Spicy Italian Sausage topped with Fresh Basil and Shaved Parmesan Cheese. Served on Fusilli.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Chicken Limone</h3>
-        <p class="price">$14.50</p>
-        <p class="descritpion">Roasted Chicken Breast, Artichokes, Capers, Fresh Lemon Butter Sauce, Garlic. Served on Fusilli.</p>
-        <p class="upgrade">GO GREEN: ADD ASPARAGUS FOR THE PERFECT CRUNCH. ($3.50)</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-
-        <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Italian Sausage Pasta</h3>
-        <p class="price">$14.50</p>
-        <p class="descritpion">Marinara Sauce, Spicy Italian Sausage, Mixed Peppers, Mushrooms, Marsala Wine, Parmesan Cheese. Served on Penne.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-        <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Spaghetti and Meatballs</h3>
-        <p class="price">$14.50</p>
-        <p class="descritpion">Marinara Sauce, Meatballs, Parmesan, Oregano, Basil. Served on Spaghettini</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Chicken Chipotle</h3>
-        <p class="price">$14.50</p>
-        <p class="descritpion">Roasted Chicken, Corn, Scallions, Mixed Peppers, Chipotle Cream, Lime Juice, and Cilantro. Served on Penne.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Creamy Garlic Chicken</h3>
-        <p class="price">$14.95</p>
-        <p class="descritpion">Roasted Chicken, Creamy Garlic Sauce, Mushrooms, Sun Dried Tomatoes.Served on Penne.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Pasta Martini</h3>
-        <p class="price">$14.95</p>
-        <p class="descritpion">Vodka, Creamy Marinara, Chicken, Artichokes, Garlic, Kalamata Olives. Served on Penne.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Spicy Alfredo with Italian Sausage</h3>
-        <p class="price">$14.95</p>
-        <p class="descritpion">Scallions, Tomatoes, Mushrooms, Italian Sausage, in a Creamy Garlic Sauce. Served on Fusilli.</p>
-        <button class="modal-button" id="show-modal">See Details</button>             
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Parmasean Chicken Pasta</h3>
-        <p class="price">$14.95</p>
-        <p class="descritpion">Marinara Sauce, Meatballs, Parmesan, Oregano, Basil. Served on Spaghettini</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Creamy Pesto Pasta</h3>
-        <p class="price">$12.50</p>
-        <p class="descritpion">Crispy Chicken, Marinara, Melted Mozzarella, served on Linguine.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Roasted Brussell Sprouts and Pancetta Pasta</h3>
-        <p class="price">$13.95</p>
-        <p class="descritpion">Crisp Pancetta, Roasted Brussels Sprouts, Red Pepper Flakes in a Garlic Butter Sauce. Served on Fettuccine and topped with Shaved Parmesan and Parsley.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Stuffed Manicotti</h3>
-        <p class="price">$15.50</p>
-        <p class="descritpion">Baked Ricotta Cheese filled Manicotti with your choice of Sausage or Portobella and Mixed Peppers Ragu. Topped with fresh Shaved Parmesan and Basil.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Chicken Fettuccine</h3>
-        <p class="price">$15.50</p>
-        <p class="descritpion">Roasted Chicken, Broccoli, Asparagus, Yellow Squash, Zucchini, in a Parmesan Garlic Cream Sauce, topped with Carrots. Served on Fettuccine.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Three Cheese Mac And Cheese</h3>
-        <p class="price">$15.50</p>
-        <p class="descritpion"><b>This ain't no kids meal!</b> Smokey Chipotle Cream Sauce blended with Cheddar, Mozzarella and Gorgonzola cheeses, Bacon, Sausage, Croutons, served on Penne Pasta.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Cajun Jumbalaya</h3>
-        <p class="price">$15.50</p>
-        <p class="descritpion">Cajun Chicken, Spicy Sausage, Mixed Peppers, Mushrooms, Onions, Roasted in a light Garlic Cajun Sauce. Served on Fettuccine.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Garlic Shrimp</h3>
-        <p class="price">$15.50</p>
-        <p class="descritpion">Shrimp, Creamy Garlic Sauce, Mushrooms, Sun Dried Tomatoes. Served on Linguine.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Great White Buffalo</h3>
-        <p class="price">$15.50</p>
-        <p class="descritpion">Crispy Buffalo Chicken, Broccoli with a Creamy Gorgonzola Sauce. Served on Linguine.</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>
-
-      <div class="booyah-box col-10 offset-1">
-        <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-        <h3>Amy's Lasagna</h3>
-        <p class="price">$15.50</p>
-        <p class="descritpion">Four Cheese. Meatball. Bolognese Lasagna… Just order it!</p>
-        <p class="upgrade">IT TAKES LONGER TO COOK BUT WORTH THE WAIT!</p>
-        <button class="modal-button" id="show-modal">See Details</button>
-      </div>  
-
-      <div class="booyah-box col-10 offset-1">
-        <b>SUBSTITUTE ZOODLES (zucchini noodles) to any pasta. They’re Amazing! $2.95
-        <br />
-        <br />
-        NOTE: All pastas are garnished with Parmesan Cheese and Italian Parsley. All pastas can be prepared vegetarian upon request.
-        <br />
-        <br />
-        Whole Wheat Pasta & Gluten Free Pasta Available At No Additional Charge 
-        </b>   
-      </div>
-
-
-        <div class="col-sm-2 page_announcement">Add a Protein</div>
-
-
-        <div class="col-xs-9">Chicken</div>
-        <div class="col-xs-3">$5.75</div>
-        <div class="col-xs-9">Shrimp*</div>
-        <div class="col-xs-3">$6.75</div>
-        <div class="col-xs-9">Crispy Chicken 1 PC</div>
-        <div class="col-xs-3">$3.95</div>
-        <div class="col-xs-9">Spicy Italian Sausage</div>
-        <div class="col-xs-3">$5.75</div>
-        <div class="col-xs-9">Meatball</div>
-        <div class="col-xs-3">$3.75</div>
-        <div class="col-xs-9">Flat Iron Steak*</div>
-        <div class="col-xs-3">$6.75</div>
-        <div class="col-xs-9">Salmon*</div>
-        <div class="col-xs-3">$9.95</div>
-    
-
-      <div class="col-sm-2 disclaimer padD">All Flat Iron Steak Is Cooked Medium To Medium-Well</div>
-      <hr />
-      <p class="menu_boiler">"*WARNING: Consuming raw or undercooked meat, eggs or seafood can increase your risk of food borne illness."</p>
-    </section>
-
-
-
-  
-  <!--     <div class="bg-modal modal-fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-zoo" data-dismiss="modal" aria-hidden="true">+</div>
-        <img class="center" src="zoodles-arrabbiata.jpg" png="">
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-xs-8">
-                  Zucchini Noodles, Spicy Marinara, Pomodoro Tomato, Anchovy Paste, Onion, Fresh Basil.
-                </div>
-                <div class="col-xs-4">
-                  $10.95
-                </div>
-                 <a class="custom-close"> My Custom Close Link </a>
+  <section class="appetizers">
+    <h1 align="center">Pastas</h1>
+      <button type="button" class="button" onclick="history.back();" value="Back">Back</button>
+    <div class="booyah-box col-10 offset-1">
+      <h3><b>New</b> Zoodles Arrabbiata</h3>
+      <p class="price">$10.95</p>
+      <br />
+      <br />
+      <button class="button" data-toggle="modal" data-target="#myModal" id="button">
+        More  Info...
+      </button>
+    </div>   
+    <div class="booyah-box col-10 offset-1">
+      <h3><b>New</b> Pasta Francaise</h3>
+      <p class="price">$10.95</p>
+      <br />
+      <br />
+      <button class="button" id="button-francaise" data-toggle="modal" data-target="#myModal1">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3><b>New</b> Super Food</h3>
+      <p class="price">$10.95</p>
+      <br />
+      <br />
+      <button class="button" id="button-super" data-toggle="modal" data-target="#myModal2">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3><b>New</b> What The Kale?!</h3>
+      <p class="price">$11.95</p>
+      <br />
+      <br />
+      <button class="button" id="button-kale" data-toggle="modal" data-target="#myModal3">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Pomodoro Pasta</h3>
+      <p class="price">$10.95</p>
+      <br />
+      <br />
+      <button class="button" id="button-pomodoro" data-toggle="modal" data-target="#myModal4">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Alfredo Supremo</h3>
+      <p class="price">$12.50</p>
+      <p class="descritpion">White Wine, Garlic, Cream, and Parmesan Cheese. Served on Linguine.</p>
+      <button class="button" id="show-modal" data-toggle="modal" data-target="#myModal5">
+        More Info...
+      </button>
+    </div>    
+    <div class="booyah-box col-10 offset-1">
+      <h3>Pasta Primavera</h3>
+      <p class="price">$12.50</p>
+      <p class="descritpion">Mixed Peppers, Broccoli, Zucchini, Mushrooms, Diced and Sun Dried Tomatoes in a White Wine Garlic Butter Sauce. Served on Linguine.</p>
+      <button class="button" id="show-modal" data-toggle="modal" data-target="#myModal6">
+        More Info...
+      </button>
+    </div>  
+    <div class="booyah-box col-10 offset-1">
+      <h3>Creamy Mushroom And Asparagus</h3>
+      <p class="price">$12.50</p>
+      <p class="descritpion">Creamy Garlic Sauce, Sun Dried Tomatoes, Mushrooms, Asparagus. Served on Penne.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal7">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Pasta Rustico</h3>
+      <p class="price">$12.50</p>
+      <p class="descritpion">Baby Spinach, Ricotta, Garlic, Fresh Marinara and topped with Mozzarella. Served on Penne.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal8">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Pasta Valducci</h3>
+      <p class="price">$12.50</p>
+      <p class="descritpion">Artichokes, Kalamata Olives, Sun Dried Tomatoes, and Garlic, in a Pink Sauce. Served on Penne.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal9">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Babbo's Bowl O' Bolognese</h3>
+      <p class="price">$14.50</p>
+      <p class="descritpion">Marinara Sauce, Ground Beef, Thyme, Bay Leaves, Garlic and Romano Cheese. Served on Spaghettini.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal10">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>PASTA PUGLIA (PRONOUNCED POOLIA)</h3>
+      <p class="price">$13.95</p>
+      <p class="descritpion">Fresh Tomato Brodo, Fresh Mozzarella, Spicy Italian Sausage topped with Fresh Basil and Shaved Parmesan Cheese. Served on Fusilli.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal11">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Chicken Limone</h3>
+      <p class="price">$14.50</p>
+      <p class="descritpion">Roasted Chicken Breast, Artichokes, Capers, Fresh Lemon Butter Sauce, Garlic. Served on Fusilli.</p>
+      <p class="upgrade">GO GREEN: ADD ASPARAGUS FOR THE PERFECT CRUNCH. ($3.50)</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal12">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Italian Sausage Pasta</h3>
+      <p class="price">$14.50</p>
+      <p class="descritpion">Marinara Sauce, Spicy Italian Sausage, Mixed Peppers, Mushrooms, Marsala Wine, Parmesan Cheese. Served on Penne.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal13">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Spaghetti and Meatballs</h3>
+      <p class="price">$14.50</p>
+      <p class="descritpion">Marinara Sauce, Meatballs, Parmesan, Oregano, Basil. Served on Spaghettini</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal14">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Chicken Chipotle</h3>
+      <p class="price">$14.50</p>
+      <p class="descritpion">Roasted Chicken, Corn, Scallions, Mixed Peppers, Chipotle Cream, Lime Juice, and Cilantro. Served on Penne.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal15">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Creamy Garlic Chicken</h3>
+      <p class="price">$14.95</p>
+      <p class="descritpion">Roasted Chicken, Creamy Garlic Sauce, Mushrooms, Sun Dried Tomatoes.Served on Penne.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal16">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Pasta Martini</h3>
+      <p class="price">$14.95</p>
+      <p class="descritpion">Vodka, Creamy Marinara, Chicken, Artichokes, Garlic, Kalamata Olives. Served on Penne.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal17">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Spicy Alfredo with Italian Sausage</h3>
+      <p class="price">$14.95</p>
+      <p class="descritpion">Scallions, Tomatoes, Mushrooms, Italian Sausage, in a Creamy Garlic Sauce. Served on Fusilli.</p>
+      <button class="modal-button" id="show-modal">
+        More Info...
+      </button>             
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Parmasean Chicken Pasta</h3>
+      <p class="price">$14.95</p>
+      <p class="descritpion">Marinara Sauce, Meatballs, Parmesan, Oregano, Basil. Served on Spaghettini</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal18">
+        See Details
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Creamy Pesto Pasta</h3>
+      <p class="price">$12.50</p>
+      <p class="descritpion">Crispy Chicken, Marinara, Melted Mozzarella, served on Linguine.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal19">
+        See Details
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Roasted Brussell Sprouts and Pancetta Pasta</h3>
+      <p class="price">$13.95</p>
+      <p class="descritpion">Crisp Pancetta, Roasted Brussels Sprouts, Red Pepper Flakes in a Garlic Butter Sauce. Served on Fettuccine and topped with Shaved Parmesan and Parsley.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal20">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Stuffed Manicotti</h3>
+      <p class="price">$15.50</p>
+      <p class="descritpion">Baked Ricotta Cheese filled Manicotti with your choice of Sausage or Portobella and Mixed Peppers Ragu. Topped with fresh Shaved Parmesan and Basil.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal21">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Chicken Fettuccine</h3>
+      <p class="price">$15.50</p>
+      <p class="descritpion">Roasted Chicken, Broccoli, Asparagus, Yellow Squash, Zucchini, in a Parmesan Garlic Cream Sauce, topped with Carrots. Served on Fettuccine.</p>
+      <button class="modal-button" id="show-modal">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Three Cheese Mac And Cheese</h3>
+      <p class="price">$15.50</p>
+      <p class="descritpion"><b>This ain't no kids meal!</b> Smokey Chipotle Cream Sauce blended with Cheddar, Mozzarella and Gorgonzola cheeses, Bacon, Sausage, Croutons, served on Penne Pasta.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal22">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Cajun Jumbalaya</h3>
+      <p class="price">$15.50</p>
+      <p class="descritpion">Cajun Chicken, Spicy Sausage, Mixed Peppers, Mushrooms, Onions, Roasted in a light Garlic Cajun Sauce. Served on Fettuccine.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal23">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Garlic Shrimp</h3>
+      <p class="price">$15.50</p>
+      <p class="descritpion">Shrimp, Creamy Garlic Sauce, Mushrooms, Sun Dried Tomatoes. Served on Linguine.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal24">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Great White Buffalo</h3>
+      <p class="price">$15.50</p>
+      <p class="descritpion">Crispy Buffalo Chicken, Broccoli with a Creamy Gorgonzola Sauce. Served on Linguine.</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal25">
+        More Info...
+      </button>
+    </div>
+    <div class="booyah-box col-10 offset-1">
+      <h3>Amy's Lasagna</h3>
+      <p class="price">$15.50</p>
+      <p class="descritpion">Four Cheese. Meatball. Bolognese Lasagna… Just order it!</p>
+      <p class="upgrade">IT TAKES LONGER TO COOK BUT WORTH THE WAIT!</p>
+      <button class="modal-button" id="show-modal" data-toggle="modal" data-target="#myModal26">
+        More Info...
+      </button>
+    </div>  
+    <div class="booyah-box col-10 offset-1">
+      <b>SUBSTITUTE ZOODLES (zucchini noodles) to any pasta. They’re Amazing! $2.95
+      <br />
+      <br />
+      NOTE: All pastas are garnished with Parmesan Cheese and Italian Parsley. All pastas can be prepared vegetarian upon request.
+      <br />
+      <br />
+      Whole Wheat Pasta & Gluten Free Pasta Available At No Additional Charge 
+      </b>   
+    </div>
+    <div class="col-sm-2 page_announcement">Add a Protein</div>
+    <div class="col-xs-9">Chicken</div>
+    <div class="col-xs-3">$5.75</div>
+    <div class="col-xs-9">Shrimp*</div>
+    <div class="col-xs-3">$6.75</div>
+    <div class="col-xs-9">Crispy Chicken 1 PC</div>
+    <div class="col-xs-3">$3.95</div>
+    <div class="col-xs-9">Spicy Italian Sausage</div>
+    <div class="col-xs-3">$5.75</div>
+    <div class="col-xs-9">Meatball</div>
+    <div class="col-xs-3">$3.75</div>
+    <div class="col-xs-9">Flat Iron Steak*</div>
+    <div class="col-xs-3">$6.75</div>
+    <div class="col-xs-9">Salmon*</div>
+    <div class="col-xs-3">$9.95</div>
+    <div class="col-sm-2 disclaimer padD">All Flat Iron Steak Is Cooked Medium To Medium-Well</div>
+    <hr />
+    <p class="menu_boiler">"*WARNING: Consuming raw or undercooked meat, eggs or seafood can increase your risk of food borne illness."
+    </p>
+  </section>
+    <!-- Modal -->
+    <div class="bg-modal modal fade" id="myModal" role="dialog">
+        <!-- Modal content-->
+      <div class="modal-content">
+        <div class="close-zoo" data-dismiss="modal" aria-hidden="true">+</div>
+        <div class="modal-header">
+          <h4 class="modal-title">ZOODLES ARRABBIATA</h4>
+          <img class="center" src="zoodles-arrabbiata.jpg" id="imgtab" png="">
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-8">
+                Zucchini Noodles, Spicy Marinara, Pomodoro Tomato, Anchovy Paste, Onion, Fresh Basil.
+              </div>
+              <div class="col-xs-4">
+                $10.95
               </div>
             </div>
           </div>
         </div>
-      </div> 
-    </div> -->
-
-  <!-- Modal -->
-  <div class="bg-modal modal fade" id="myModal" role="dialog">
-    
-    
-      <!-- Modal content-->
+      </div>    
+    </div>  
+    <div class="bg-modal-francaise modal fade" id="myModal1" role="dialog">
       <div class="modal-content">
- <div class="close-zoo" data-dismiss="modal" aria-hidden="true">+</div>
-        <div class="modal-header">
-          
-          <h4 class="modal-title">ZOODLES ARRABBIATA</h4>
-          <img class="center" src="zoodles-arrabbiata.jpg" png="">
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-              <div class="row">
-                <div class="col-xs-8">
-                  Zucchini Noodles, Spicy Marinara, Pomodoro Tomato, Anchovy Paste, Onion, Fresh Basil.
-                </div>
-                <div class="col-xs-4">
-                  $10.95
-                </div>
-              </div>
-        </div>
-        
-        </div>
-      </div>
-      
-    
-  </div>
-  
-
-
-    
- <div class="bg-modal-francaise modal fade" id="myModal1" role="dialog">
-      <div class="modal-content">
-        <div class="close-fran" data-dismiss="modal" aria-hidden="true">
-          +
-        </div>
+        <div class="close-fran" data-dismiss="modal" aria-hidden="true">+</div>
         <div id="nav" class="nav">
           <img class="center" id="start" src="pasta-francaise.jpg" png="">
         </div>
@@ -378,11 +328,12 @@
         </div>
       </div>
     </div>   
-
-    <div class="bg-modal-super-food-pasta">
+    <div class="bg-modal-super-food-pasta modal fade" id="myModal2" role="dialog">
       <div class="modal-content">
-        <div class="close-super">+</div>
-      <img class="center" src="super-food-pasta.jpg" png="">
+        <div class="close-super" data-dismiss="modal" aria-hidden="true">+</div>
+        <div id="nav" class="nav">
+          <img class="center" src="super-food-pasta.jpg" png="">
+        </div>
         <div class="modal-body">
           <div class="container-fluid">
             <div class="row">
@@ -397,49 +348,49 @@
         </div>
       </div> 
     </div>
-
-
-     <div class="bg-modal-kale">
-       <div class="modal-content">
-         <div class="close-kale">+</div>
-           <img class="center" src="what-the-kale.jpg" png="">
-           <div class="modal-body">
-             <div class="container-fluid">
-               <div class="row">
-                 <div class="col-xs-8">
-                   Artichoke, Garlic, Kale and Roma Tomatoes served in a creamy Three Cheese Sauce. Served on Penne.
-                 </div>
-                 <div class="col-xs-4">
-                   $10.95
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div> 
-       </div>
-
-  <!--     <div class="bg-modal-super-food-pasta">
-        <div class="modal-content">
-          <div class="close">+</div>
-            <img class="center" src="super-food-pasta.jpg" png="">
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-xs-8">
-                  Zucchini Noodles, Spicy Marinara, Pomodoro Tomato, Anchovy Paste, Onion, Fresh Basil.
-                </div>
-                <div class="row">
-                  <div class="col-xs-4">
-                    $10.95
-                  </div>
-                </div>
+    <div class="bg-modal-kale modal fade" id="myModal3" role="dialog">
+      <div class="modal-content">
+        <div class="close-kale" data-dismiss="modal" aria-hidden="true">+</div>
+        <div id="nav" class="nav">
+          <img class="center" src="what-the-kale.jpg" png="">
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-8">
+                Artichoke, Garlic, Kale and Roma Tomatoes served in a creamy Three Cheese Sauce. Served on Penne.
+              </div>
+              <div class="col-xs-4">
+                $10.95
               </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div> 
+    </div>
+    <div class="bg-modal-pomodoro modal fade" id="myModal4" role="dialog">
+      <div class="modal-content">
+        <div class="close-pomodoro" data-dismiss="modal" aria-hidden="true">+</div>
+        <div id="nav" class="nav">
+          <img class="center" src="pomodoro-pasta.jpg" png="">
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-8">
+                Chopped Pomodoro Tomatoes, Green Onions, Capers, lightly tossed in Extra Virgin Olive Oil and Garlic. Served on Linguine and topped with Shaved Parmesan.
+              </div>
+              <div class="col-xs-4">
+                $10.95
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
 
- 
+
+   
 
 
 
@@ -452,5 +403,5 @@
  <script src="/assets/js/pastas.js"></script>
  
     
-  </body>
+</body>
 </html>

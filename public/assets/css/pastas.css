@@ -280,6 +280,17 @@ a.app-link:active {
   display: none;
 }
 
+.bg-modal-pomodoro {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 .modal-content {
   width: 500px;
   height: 300px;
@@ -340,6 +351,15 @@ a.app-link:active {
 }
 
 .close-zoo {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg); 
+  cursor: pointer;
+}
+
+.close-pomodoro {
   position: absolute;
   top: 0;
   right: 14px;
