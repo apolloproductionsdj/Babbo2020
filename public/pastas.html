@@ -64,16 +64,18 @@
     <div class="booyah-box col-10 offset-1">
       <h3>Alfredo Supremo</h3>
       <p class="price">$12.50</p>
-      <p class="descritpion">White Wine, Garlic, Cream, and Parmesan Cheese. Served on Linguine.</p>
-      <button class="button" id="show-modal" data-toggle="modal" data-target="#myModal5">
+      <br />
+      <br />
+      <button class="button" id="button-supremo" data-toggle="modal" data-target="#myModal5">
         More Info...
       </button>
     </div>    
     <div class="booyah-box col-10 offset-1">
       <h3>Pasta Primavera</h3>
       <p class="price">$12.50</p>
-      <p class="descritpion">Mixed Peppers, Broccoli, Zucchini, Mushrooms, Diced and Sun Dried Tomatoes in a White Wine Garlic Butter Sauce. Served on Linguine.</p>
-      <button class="button" id="show-modal" data-toggle="modal" data-target="#myModal6">
+      <br />
+      <br />
+      <button class="button" id="button-primavera" data-toggle="modal" data-target="#myModal6">
         More Info...
       </button>
     </div>  
@@ -312,7 +314,7 @@
       <div class="modal-content">
         <div class="close-fran" data-dismiss="modal" aria-hidden="true">+</div>
         <div id="nav" class="nav">
-          <img class="center" id="start" src="pasta-francaise.jpg" png="">
+          <img class="center" src="pasta-francaise.jpg" id="img-francaise" png="">
         </div>
         <div class="modal-body">
           <div class="container-fluid">
@@ -332,7 +334,7 @@
       <div class="modal-content">
         <div class="close-super" data-dismiss="modal" aria-hidden="true">+</div>
         <div id="nav" class="nav">
-          <img class="center" src="super-food-pasta.jpg" png="">
+          <img class="center" src="super-food-pasta.jpg" id="img-super" png="">
         </div>
         <div class="modal-body">
           <div class="container-fluid">
@@ -351,9 +353,7 @@
     <div class="bg-modal-kale modal fade" id="myModal3" role="dialog">
       <div class="modal-content">
         <div class="close-kale" data-dismiss="modal" aria-hidden="true">+</div>
-        <div id="nav" class="nav">
-          <img class="center" src="what-the-kale.jpg" png="">
-        </div>
+          <img class="center" src="what-the-kale.jpg" id="img-kale" png="">
         <div class="modal-body">
           <div class="container-fluid">
             <div class="row">
@@ -371,9 +371,7 @@
     <div class="bg-modal-pomodoro modal fade" id="myModal4" role="dialog">
       <div class="modal-content">
         <div class="close-pomodoro" data-dismiss="modal" aria-hidden="true">+</div>
-        <div id="nav" class="nav">
-          <img class="center" src="pomodoro-pasta.jpg" png="">
-        </div>
+          <img class="center" src="pomodoro-pasta.jpg" id="img-pomodoro" png="">
         <div class="modal-body">
           <div class="container-fluid">
             <div class="row">
@@ -382,6 +380,42 @@
               </div>
               <div class="col-xs-4">
                 $10.95
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+     <div class="bg-modal-supremo modal fade" id="myModal5" role="dialog">
+      <div class="modal-content">
+        <div class="close-supremo" data-dismiss="modal" aria-hidden="true">+</div>
+          <img class="center" src="alfredo-supremo.jpg" id="img-supremo" png="">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-8">
+                White Wine, Garlic, Cream, and Parmesan Cheese. Served on Linguine.
+              </div>
+              <div class="col-xs-4">
+                $12.50
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+     <div class="bg-modal-primavera modal fade" id="myModal6" role="dialog">
+      <div class="modal-content">
+        <div class="close-primavera" data-dismiss="modal" aria-hidden="true">+</div>
+          <img class="center" src="pasta-primavera.jpg" id="img-primavera" png="">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-8">
+                Mixed Peppers, Broccoli, Zucchini, Mushrooms, Diced and Sun Dried Tomatoes in a White Wine Garlic Butter Sauce. Served on Linguine.
+              </div>
+              <div class="col-xs-4">
+                $12.50
               </div>
             </div>
           </div>
