@@ -12,6 +12,7 @@
 
 
 
+
 h4 {
   color: white;
 }
@@ -29,11 +30,11 @@ h4 {
   padding: 20px;
 }
 
-header {
+/*header {
   font-size: 1.1em;
   height: 40px;
   padding: 10px;
-}
+}*/
 
 .container {
   display: flex;
@@ -633,11 +634,7 @@ a.app-link:active {
   cursor: pointer;
 }
 
-.button {
-  background: #7f0000;
-  color: #fff;
- 
-}
+
 
 .close-zoo {
   position: absolute;
@@ -864,11 +861,92 @@ a.app-link:active {
   transform: rotate(45deg); 
 }
 
-.sticky {
+/*.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: yellow;
   padding: 50px;
   font-size: 20px;
+}*/
+
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}*/
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+header {
+  background-image: ('public/spaghetti.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: rgba(10,10,10,0.3);
+  background: #7f0000;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+nav li span {
+  padding-left: 5px;
+}
+
+li a {
+  padding: 5px;
+  background-color: #fff;
+  text-decoration: none !important;
+  text-align: right;
+}
+/*
+.cart-button {
+  text-align: right;
+}*/
+
+.button {
+  background: #7f0000;
+  color: #fff;
+  text-align: left; 
+}
+
+.left {
+  text-align: left;
+  padding-right: 110px;
 }
