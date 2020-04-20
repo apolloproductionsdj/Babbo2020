@@ -945,8 +945,31 @@ li a {
   color: #fff;
   text-align: left; 
 }
-
+ 
 .left {
   text-align: left;
   padding-right: 10px;
+}
+
+.cart ion-icon {
+  vertical-align: botton;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.cart a {
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.add-cart {
+  position: relative;
+  width: 100%;
+
+  transition: all 0.3s ease-in-out;
+ /* opacity: 0;*/
+  cursor: pointer;
+  text-align: center;
 }

@@ -57,3 +57,16 @@ li a {
   background-color: #fff;
   text-decoration: none;
 }
+
+.cart ion-icon {
+  vertical-align: botton;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.cart a {
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
