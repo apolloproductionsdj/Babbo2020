@@ -111,8 +111,7 @@ function onLoadCartNumbers() {
 
 function cartNumbers(product) {
   let productNumbers = localStorage.getItem('cartNumbers');
-  console.log('The product information is', product);
-  
+
   productNumbers = parseInt(productNumbers);
 
   if (productNumbers) {
@@ -122,5 +121,31 @@ function cartNumbers(product) {
       localStorage.setItem('cartNumbers', 1);
       document.querySelector('.cart span').textContent = 1
     }
+    setItems(product);
 }
+
+function setItems(product){
+  let cartItems = localStorage.getItem('productsInCart');
+  cartItems = JSON.parse(cartItems);
+  console.log("My cartItems are", cartItems);
+
+  if(cartItems != null) {
+
+    if(cartItems[product.name] == undefined) {
+      cartItems = {
+        ...cartItems,
+        [product.name]: product 
+      }
+    }
+    cartItems[product.name].inCart += 1
+  } else {
+      product.inCart = 1;
+      cartItems = {
+        [product.name]: product
+      }
+  }
+  
+  localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+}
+
 onLoadCartNumbers();
