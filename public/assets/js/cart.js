@@ -76,21 +76,25 @@ let carts = document.querySelectorAll('.add-cart');
 products = [
   {
     name: 'Zoodles Arrabbiata',
+    tag: 'zoodles-arrabbiata',
     price: 10.95,
     inCart: 0
   },
   {
     name: 'Pasta Francaise',
+    tag: 'pasta-francaise',
     price: 10.95,
     inCart: 0
   },
   {
     name: 'Super Food Pasta',
+    tag: 'super-food-pasta',
     price: 10.95,
     inCart: 0
   },
   {
     name: 'What The Kale',
+    tag: 'what-the-kale',
     price: 11.95,
     inCart: 0
   }
@@ -102,6 +106,20 @@ for (let i = 0; i < carts.length; i++) {
     totalCost(products[i]);
   });
 }
+
+// var addToCartClick = document.getElementsByClassName('shop-item-cart') 
+//   for (var i = 0; i < addToCartClick.length; i++) {
+//       var click = addToCartClick[i]
+//       click.addEventListener('click', addToCartClicked)
+//   }
+
+
+// function addToCartClicked(event) {
+//   var click = event.target
+//   var shopItem = click.parentElement.parentElement
+//   var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+//   console.log(title)
+// }
 
 function onLoadCartNumbers() {
   let productNumbers = localStorage.getItem('cartNumbers');
@@ -160,4 +178,26 @@ function totalCost(product) {
   
 }
 
+function displayCart() {
+  let cartItems = localStorage.getItem("productsInCart");
+  cartItems = JSON.parse(cartItems)
+  let productContainer = document.querySelector('.products-container');
+
+  console.log(cartItems);
+  if(cartItems && productContainer ) {
+    productContainer.innerHTML = '';
+    Object.values(cartItems).map(item => {
+      productContainer.innerHTML += `
+      <div class="product">
+        <ion-icon name="close-circle"></ion-icon>
+        <img src="./assets/images/${item.tag}.jpg">
+        <span>${item.name}</span>
+        `
+    })
+  }
+}
+
+
+
 onLoadCartNumbers();
+displayCart();
