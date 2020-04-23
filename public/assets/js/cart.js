@@ -132,7 +132,7 @@ function cartNumbers(product) {
   let productNumbers = localStorage.getItem('cartNumbers');
 
   productNumbers = parseInt(productNumbers);
-  
+
 
   if (productNumbers) {
     localStorage.setItem('cartNumbers', productNumbers + 1);
@@ -203,17 +203,17 @@ function displayCart() {
         <ion-icon name="caret-forward-outline"></ion-icon>
         </div>
        <div class="total">
-        ${item.inCart * item.price}
+        $${item.inCart * item.price}
        </div>
         `;
     });
     productContainer.innerHTML += `
       <div class="basketTotalContainer">
         <h4 class="basketTotalTitle">
-          Basket Total
+          Cart Total
         </h4>
         <h4 class="basketTotal">
-          ${cartCost}
+          $${cartCost}
         </h4>
     `
   }
