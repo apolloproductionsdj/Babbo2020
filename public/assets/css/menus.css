@@ -67,16 +67,19 @@ header.welcome {
   text-align: center;
   background-color: #edeff0;
   padding: 60px;
+  color: #7f0000;
 }
 
 header.welcome h1 {
   font-size: 20px;
   line-height: 1;
+  color: #7f0000;
 }
 
 header.welcome h2 {
   font-size: 35px;
   line-height: 1;
+  color: #7f0000;
 }
 
 .container {
@@ -156,4 +159,12 @@ a.board-tile:hover {
     height: 86px;
     margin: 8px;
   }
+}
+
+header {
+  background-image: url("/assets/images/togo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
