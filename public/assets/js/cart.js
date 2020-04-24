@@ -185,8 +185,6 @@ function displayCart() {
   let productContainer = document.querySelector('.products');
   let cartCost = localStorage.getItem('totalCost');
 
-
-  console.log(cartItems);
   if(cartItems && productContainer ) {
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
@@ -198,9 +196,9 @@ function displayCart() {
          </div>
         <div class="price">${item.price}</div>
         <div class="quantity">
-        <ion-icon name="caret-back-outline"></ion-icon>
+        <ion-icon name="caret-back-outline" id="subtract"></ion-icon>
         <span>${item.inCart}</span>
-        <ion-icon name="caret-forward-outline"></ion-icon>
+        <ion-icon name="caret-forward-outline" id="add"></ion-icon>
         </div>
        <div class="total">
         $${item.inCart * item.price}
@@ -215,10 +213,48 @@ function displayCart() {
         <h4 class="basketTotal">
           $${cartCost}
         </h4>
-    `
+    `;
+
+  }
+  deleteButtons();
+}
+
+function deleteButtons() {
+  let deleteButtons = document.querySelectorAll('.product ion-icon')
+  let productName;
+  let productNumbers = localStorage.getItem('cartNumbers');
+  let cartItems = localStorage.getItem('productsInCart');
+  cartItems = JSON.parse(cartItems);
+  console.log(cartItems);
+
+  for (let i = 0; i < deleteButtons.length; i++) {
+    deleteButtons[i].addEventListener('click', () => {
+      productName = deleteButtons[i].parentElement.textContent.trim();
+      // .toLowerCase().replace(/ /g, "-");
+      console.log(productName);
+      console.log(cartItems[productName].name + " " + cartItems[productName].inCart);
+
+      // localStorage.setItem('cartNumbers', productNumbers - )
+    });
   }
 }
 
+
+
+// function addOneSubtractOne() {
+
+//   let btnAdd = document.querySelector('#add');
+//   let btnSubtract = document.querySelector('#subtract');
+//   let inCart = document.querySelector('inCart');
+//     btnAdd.addEventListener('click', () => {
+//       item.inCart.value = parseInt(item.inCart) + 1;
+//     });
+
+//     btnSubtract.addEventListener('click', () => {
+//       item.inCart.value = parseInt(item.inCart.value) - 1;
+//     });
+
+// }
 
 
 onLoadCartNumbers();
