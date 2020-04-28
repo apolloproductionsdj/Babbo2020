@@ -170,9 +170,11 @@ function totalCost(product) {
   
   let cartCost = localStorage.getItem('totalCost');
 
+
+
   if(cartCost != null) {
     cartCost = parseFloat(cartCost);
-    localStorage.setItem('totalCost', cartCost + product.price);
+    localStorage.setItem('totalCost', (cartCost + product.price).toFixed(2));
   } else {
     localStorage.setItem('totalCost', product.price);
   }
@@ -184,6 +186,7 @@ function displayCart() {
   cartItems = JSON.parse(cartItems)
   let productContainer = document.querySelector('.products');
   let cartCost = localStorage.getItem('totalCost');
+
 
   if(cartItems && productContainer ) {
     productContainer.innerHTML = '';
@@ -201,7 +204,7 @@ function displayCart() {
         <ion-icon name="caret-forward-outline" id="add"></ion-icon>
         </div>
        <div class="total">
-        $${item.inCart * item.price}
+        $${(item.inCart * 10) * (item.price * 10) / 100}
        </div>
         `;
     });
@@ -234,7 +237,7 @@ function deleteButtons() {
 
       localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart ); 
 
-      localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
+      localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price.toFixed(2) * cartItems[productName].inCart));
     
       delete cartItems[productName];
       localStorage.setItem('productsInCart', JSON.stringify(cartItems));
