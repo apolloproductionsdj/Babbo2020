@@ -199,9 +199,9 @@ function displayCart() {
          </div>
         <div class="price">${item.price}</div>
         <div class="quantity">
-        <ion-icon name="caret-back-outline" id="subtract"></ion-icon>
+        <ion-icon class="decrease" name="caret-back-outline" id="subtract"></ion-icon>
         <span>${item.inCart}</span>
-        <ion-icon name="caret-forward-outline" id="add"></ion-icon>
+        <ion-icon class="increase" name="caret-forward-outline" id="add"></ion-icon>
         </div>
        <div class="total">
         $${(item.inCart * 10) * (item.price * 10) / 100}
@@ -220,6 +220,7 @@ function displayCart() {
 
   }
   deleteButtons();
+  manageQuantity();
 }
 
 function deleteButtons() {
@@ -245,6 +246,23 @@ function deleteButtons() {
       displayCart();
       onLoadCartNumbers();
     });
+  }
+}
+
+function manageQuantity() {
+  let decreaseButtons = document.querySelectorAll('.decrease');
+  let increaseButtons = document.querySelectorAll('.increase');
+
+  for (let i = 0; i < decreaseButtons.length; i++) {
+    decreaseButtons[i].addEventListener('click', () => {
+      console.log("Decrease button");
+    })
+  }
+
+  for (let i = 0; i < increaseButtons.length; i++) {
+    increaseButtons[i].addEventListener('click', () => {
+      console.log("increase button");
+    })
   }
 }
 
