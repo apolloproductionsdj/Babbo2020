@@ -7,14 +7,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-header {
-  background-image: ('/spaghetti.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 150px;
-  position: relative;
-}
+
 
 .overlay {
   position: absolute;
@@ -26,8 +19,27 @@ header {
   bottom: 0;
   padding: 0 !important;
   margin: 0 !important;
-  background-color: rgba(10,10,10,0.3);
   background-color: #7f0000;
+  height: 150px;
+}
+
+header {
+  background-image: url('/assets/images/spaghetti.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative;
+}
+
+
+.picture {
+  background-image: url('/assets/images/spaghetti.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative;
 }
 
 nav {
