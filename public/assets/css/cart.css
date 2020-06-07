@@ -115,7 +115,6 @@ li a {
 
 .product-title {
   width: 45%;
-  border-bottom: 1px solid lightgrey;
 
 }
 
@@ -177,8 +176,4 @@ li a {
 
 .basketTotal {
   width: 10%;
-}
-
-.product-header h5 {
-  margin-bottom: 0px;
 }
